@@ -3,8 +3,8 @@ import { getPermalink, getBlogPermalink, getAsset } from './utils/permalinks';
 export const headerData = {
   links: [
     {
-      text: 'Landing',
-      links: [
+      text: 'Azienda',
+      /* links: [
         {
           text: 'Sass',
           href: getPermalink('/landing/saas'),
@@ -17,17 +17,17 @@ export const headerData = {
           text: 'Mobile App',
           href: getPermalink('/landing/mobile-app'),
         },
-      ],
+      ], */
     },
     {
-      text: 'Pages',
-      links: [
+      text: 'Lavorazioni',
+      /* links: [
         {
-          text: 'Features',
+          text: 'Tornitura',
           href: '#',
         },
         {
-          text: 'Pricing',
+          text: 'Fresatura',
           href: '#',
         },
         {
@@ -46,19 +46,19 @@ export const headerData = {
           text: 'Privacy policy',
           href: getPermalink('/privacy'),
         },
-      ],
+      ], */
     },
     {
-      text: 'Widgets',
+      text: 'Prototipazione',
       href: '#',
     },
     {
-      text: 'Blog',
+      text: 'Contatti',
       href: getBlogPermalink(),
     },
   ],
   actions: [
-    { type: 'button', text: 'Download', href: 'https://github.com/onwidget/astrowind' }
+    { type: 'button', text: 'Contatti', href: getPermalink('/contacts') }
   ],
 };
   
