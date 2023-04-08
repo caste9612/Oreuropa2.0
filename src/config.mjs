@@ -1,9 +1,9 @@
-import defaultImage from './assets/images/default.png';
+import defaultImage from './assets/images/Azienda1.jpg';
 
 const CONFIG = {
-  name: 'AstroWind',
+  name: 'Oreuropa',
 
-  origin: 'https://astrowind.vercel.app',
+  origin: 'https://oreuropa.it',
   basePathname: '/',
   trailingSlash: false,
 

@@ -1,0 +1,103 @@
+---
+import { Picture } from "@astrojs/image/components";
+import Steps from "~/components/widgets/Steps.astro";
+import PageLayout from "~/layouts/PageLayout.astro"
+---
+
+
+
+<PageLayout>
+
+
+
+    <!-- Steps Widget ****************** -->
+
+    <Steps
+    title="Prototipazione 3D dei componenti rapida ed economicamente conveniente."
+    items={[
+        {
+        title: 'Step 1: <span class="font-medium">Progettazione</span>',
+        description:
+            'Ti offriamo un servizio completo, che va dall’analisi del progetto alla consegna del prototipo, passando per la progettazione, la revisione e il test. Ti seguiamo in ogni fase, ascoltando le tue esigenze e fornendoti feedback e suggerimenti. Ti garantiamo qualità, affidabilità e riservatezza.',
+        icon: 'tabler:geometry',
+        },
+        {
+        title: 'Step 2: <span class="font-medium">Preventivo</em>',
+        description:
+            'Dopo aver realizzato il prototipo, siamo in grado di fornirti un preventivo per la produzione in serie del tuo prodotto in tempi rapidi e competitivi.',
+        icon: 'tabler:receipt-2',
+        },
+        {
+        title: 'Step 3: <span class="font-medium">Produzione</span>',
+        description:
+            'Se sei soddisfatto del prototipo e vuoi avviare la produzione in serie del tuo prodotto, noi possiamo occuparcene. Siamo in grado di produrre il tuo prodotto in quantità e qualità elevate. Ti garantiamo la massima efficienza e flessibilità, adattandoci alle tue esigenze e ai tuoi tempi. Ti forniremo in anticipo i tempi precisi di consegna e ti aggiorneremo sullo stato di avanzamento della produzione.',
+        icon: 'tabler:building-factory',
+        },
+    ]}
+    image={{
+        src: import('~/assets/images/accessorimoda.webp'),
+        alt: 'accessori moda',
+    }}
+    />
+    
+
+    <section class="px-4 py-16 mx-auto max-w-7xl lg:py-20">
+        <div class="flex flex-col lg:justify-between lg:flex-row mb-8">
+      
+        </div>
+      
+        <div class="grid gap-6 row-gap-5 md:grid-cols-2 lg:grid-cols-3 -mb-6">
+            <article class="mb-6 transition">
+                <div class="relative md:h-64 bg-gray-400 dark:bg-slate-700 rounded shadow-lg mb-6">
+                    <Picture
+                    src={import("~/assets/images/castone2.webp")}
+                    class="md:object-cover w-full md:w-auto md:h-full rounded shadow-lg bg-gray-400 dark:bg-slate-700"
+                    widths={[400, 900]}
+                    width={400}
+                    height={224}
+                    sizes="(max-width: 900px) 400px, 900px"
+                    alt={"castone"}
+                    aspectRatio="16:9"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </div>
+                <p class="text-muted dark:text-slate-400 text-lg"></p>
+              </article>
+              <article class="mb-6 transition">
+                <div class="relative md:h-64 bg-gray-400 dark:bg-slate-700 rounded shadow-lg mb-6">
+                    <Picture
+                    src={import("~/assets/images/castone1.webp")}
+                    class="md:object-cover w-full md:w-auto md:h-full rounded shadow-lg bg-gray-400 dark:bg-slate-700"
+                    widths={[400, 900]}
+                    width={400}
+                    height={224}
+                    sizes="(max-width: 900px) 400px, 900px"
+                    alt={"castone"}
+                    aspectRatio="16:9"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </div>
+                <p class="text-muted dark:text-slate-400 text-lg"></p>
+              </article>
+              <article class="mb-6 transition">
+                <div class="relative md:h-64 bg-gray-400 dark:bg-slate-700 rounded shadow-lg mb-6">
+                    <Picture
+                    src={import("~/assets/images/anello3.webp")}
+                    class="md:object-cover w-full md:w-auto md:h-full rounded shadow-lg bg-gray-400 dark:bg-slate-700"
+                    widths={[400, 900]}
+                    width={400}
+                    height={224}
+                    sizes="(max-width: 900px) 400px, 900px"
+                    alt={"anello"}
+                    aspectRatio="16:9"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </div>
+                <p class="text-muted dark:text-slate-400 text-lg"></p>
+              </article>
+        </div>
+      </section>
+</PageLayout>

@@ -1,0 +1,50 @@
+---
+import Content from "~/components/widgets/Content.astro";
+import PageLayout from "~/layouts/PageLayout.astro"
+---
+
+
+<PageLayout>
+
+    <!-- Content Widget **************** -->
+    <Content
+        highlight="Offriamo una vasta gamma di"
+        title="Lavorazioni"
+        image={{
+        src: import('~/assets/images/Tornio1.webp'),
+        alt: 'Colorful Image',
+        }}
+        >
+        <Fragment slot="content">
+        <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Tornitura</h3>
+        Nella tornitura utiliziamo macchine swiss-type di ultima generazione ad 8 assi, capaci di lavorazioni inclinate e con passaggio barra fino a 32 m/m in grado quindi di realizzare oggetti da dimensioni ragguardevoli (anelli e orecchini) fino a piccoli componenti (castoni).
+        </Fragment>
+    </Content>  
+    <!-- Content Widget **************** -->
+    <Content
+        isReversed
+        isAfterContent
+        image={{
+            src: import('~/assets/images/fresa.webp'),
+            alt: 'Vintage Image',
+        }}
+    >
+    <Fragment slot="content">
+        <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Lavorazioni CNC</h3>
+        Servizio di lavorazioni CNC fronte retro. Usiamo macchinari CNC che consentono di passare dalla lavorazione della faccia frontale a quella della faccia posteriore in modo semplice e veloce. Usiamo anche sistemi di riferimento e di centraggio precisi, che garantiscono l’allineamento perfetto delle due facce.
+        </Fragment>
+    </Content>
+    <!-- Content Widget **************** -->
+    <Content
+        title=""
+        image={{
+        src: import('~/assets/images/7.webp'),
+        alt: 'Colorful Image',
+        }}
+        >
+        <Fragment slot="content">
+        <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Diamantatura</h3>Nella diamantatura possiamo lavorare palline di molteplici diametri, tubi in barre e lastre di vari spessori. Grazie all'utilizzo di macchinari all'avanguardia siamo in grado di progettare e sviluppare velocemente i prototipi richiesti dal cliente, offrendo soluzioni personalizzate.
+        </Fragment>
+    </Content> 
+
+</PageLayout>
