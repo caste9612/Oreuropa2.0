@@ -12,7 +12,7 @@ const CONFIG = {
     'Produzione gioielli, semilavorati e accessori moda dal 1989',
   defaultImage: defaultImage,
 
-  defaultTheme: 'system', // Values: "system" | "light" | "dark" | "light:only" | "dark:only"
+  defaultTheme: 'light', // Values: "system" | "light" | "dark" | "light:only" | "dark:only"
 
   language: 'it',
   textDirection: 'ltr',
